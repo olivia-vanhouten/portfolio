@@ -1,0 +1,95 @@
+.sr-only {
+    color:transparent;
+    background-color: transparent;
+    width: 1px;
+    height:1px;
+    clip-path: none;
+    position: absolute;
+    top:-1px;
+}
+html{
+    
+    background-color: rgb(11,11,19);
+}
+header{
+    height:200px;
+    padding:1%;
+    color: orange;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 1.5rem;
+}
+header h6{
+    margin:0;
+}
+header hr{
+    border: 1px solid orange;
+}
+
+main{
+    padding: 1vw;
+}
+
+#main-div {
+    background-color: orange;
+    color:rgb(11,11,19);
+    width: 98vw;
+    height:auto;
+    padding:1vw;
+}
+
+nav {
+    position:
+}
+
+.typing {
+    border-right: 2px solid orange;
+    overflow:hidden;
+    white-space: nowrap;
+    
+    animation:
+        blinking 1s steps(1, end) forwards 3,
+        typing 3s steps(16, end);
+}
+@keyframes blinking {
+    0% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: orange;
+    }
+    100% {
+        border-color: transparent;
+    }
+}
+@keyframes typing {
+    0% {width:0}
+    100% {width:100%}
+
+}
+.floatin{
+    position: relative;
+    overflow:hidden;
+    white-space: nowrap;
+    animation:
+        float-in 1s steps(30, end) backwards;
+}
+header .floatin{
+    animation:
+        float-in 1s steps(30,end) 3s backwards;
+}
+@keyframes float-in {
+    
+    0%{
+        opacity: 0%;
+        top:10px;
+    }
+    85%{
+       top: -.5px; 
+    }
+
+    100%{
+        opacity: 100%;
+        top: 0px;
+    }
+}
