@@ -15,6 +15,7 @@
   margin: 0;
   box-sizing:border-box;
   scroll-behavior:smooth;
+  scrollbar-width: none;
 }
 
 .sr-only {
@@ -27,20 +28,73 @@
     top:-1px;
 }
 @media (max-width: 400px){
-    header {
-        font-size: 1.5rem;
+    .header {    
+        height:100px;
+    }
+    .header h1{
+    margin-top: 20%;
     }
     h1{
-        font-size: 1rem;
+        font-size: 1.25rem;
+    }
+    h6{
+        font-size: .75rem;
+    }
+    .projs {
+    flex-direction: column;
+    flex-wrap: wrap;
+        height: auto;
+    }
+.description{
+    
+    width: 100%;
+    padding: 3%;
+    padding-bottom: 5%;
+}
+.project{
+        width: 100%;
+        height: 100vw;
+    }
+    #tabs {
+    width: 100%;
+    font-size: .8rem;
     }
 }
-@media (max-width: 768px){
-  header {
-    font-size: 2rem;
-  }
+
+@media (min-width: 401px) and (max-width: 767px){
+    .header {
+    height:100px;
+  }.header h1{
+        
+    margin-top: 10%;
+    }
   h1 {
     font-size: 1.5rem;
   }
+  h6{
+        font-size: 1rem;
+    }
+    .projs {
+        height: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        place-content: center;
+    }
+    .description{
+    
+    width: 40%;
+}
+    .project{
+        width: 50%;
+    height: 90%;
+    }
+    #tabs {
+    width: 80%;
+    }
+}
+
+@media (max-width: 768px){
+ 
   #project3div nav{
     
   display:in-line block;
@@ -55,9 +109,6 @@
     width:100%;
   }
   
-  #project3div header{
-    margin-bottom: -150px;
-  }
   #project4div header{height: 70px;}
    #project4div #pagename{
     top: 25px;
@@ -75,12 +126,33 @@
 }
 @media (min-width: 769px){
     
-  header {
-    font-size: 1.5rem;
+  .header {
+    height:200px;
   }
+  .header h1{
+        
+    margin-top: 15%;
+    }
   h1 {
     font-size: 2rem;
   }
+  .projs {
+        height: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        place-content: center;
+    }
+    .description{
+    
+    width: 40%;
+}
+    .project{
+        width: 50%;
+    height: 90%;
+    }
+    #tabs {
+    width: 60%;
+    }
   #project3div nav{
     
   display:block;
@@ -97,9 +169,6 @@
     margin-left:25%;
     width:70%;
   }
-  #project3div header{
-    margin-bottom: -180px;
-  }
   #project4div header{height: 50px;}
    #project4div #pagename{
     top: 12px;
@@ -115,17 +184,16 @@ html{
     
     background-color: var(--theme-black);
 }
-header{
-    height:200px;
+.header{
     padding:1%;
     color: var(--theme-orange);
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
 }
-header h6{
+.header h6{
     margin:0;
 }
-header hr{
+.header hr{
     border: 1px solid var(--theme-orange);
 }
 
@@ -142,6 +210,7 @@ a{
     padding: 2px;
     text-decoration: none;
     color: var(--theme-orange);
+    text-align: center;
 }
 nav a:hover{
     color: var(--theme-black);
@@ -171,7 +240,6 @@ https://stackoverflow.com/questions/6906724/is-it-possible-to-have-tabs-without-
 #tabs{
     display: flex;
     background-color: var(--theme-black);
-    width: 60%;
     margin: auto;
     border: 5px solid var(--theme-light);
     border-radius: 20px;
@@ -195,20 +263,14 @@ https://stackoverflow.com/questions/6906724/is-it-possible-to-have-tabs-without-
 }
 .projs {
     width: 100%;
-    height: 100%;
     display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    place-content: center;
     padding: 2%;
 }
 .description{
-    width: 40%;
     padding-right: 3%;
 }
 .project {
-    width: 50%;
-    height: 90%;
+    scrollbar-width: thin;
     overflow: scroll;
 }
 #projectlink{
