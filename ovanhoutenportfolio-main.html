@@ -17,14 +17,355 @@
             
         </header>
         <main>
-            <div id="nagivation">
+            <div id="navigation">
                 <nav>
-                    
+                    <a href="#about">About</a>
+                    <a href="#freeCodeCamp-Projects">freeCodeCamp Projects</a>
                 </nav>
             </div>
             <div id="main-div">
-                <h1>test</h1>
+                <div id="about"><p>Hello!  My name is Olivia and I have spent this summer (2025) learning HTML and CSS.  This portfolio was built using the skills I learned and the projects I worked on through the course I followed are included here as well! I'm passionate about responsive web design and accesibility using the web.</p></div>
+                
+                <h3 class="center">All projects were done on freeCodeCamp.org following their project design</h3>
+                <!-- Learned tabs from this thread on StackOverflow -->
+                <!-- https://stackoverflow.com/questions/6906724/is-it-possible-to-have-tabs-without-javascript -->
+                <nav id="tabs">
+                    <a href="#project1">Project 1</a>
+                    <a href="#project2">Project 2</a>
+                    <a href="#project3">Project 3</a>
+                    <a href="#project4">Project 4</a>
+                </nav>
+                <div id="freeCodeCamp-Projects" class="tab-folder">
+                    
+                    <div class="tab-content projs" id="project2">
+                        <div class="description">
+                            <h1>Project 2: Laika Tribute</h1>
+                            <p>For this project, I was tasked to create a tribute page.  I chose no other than the first dog to go to space, Laika.  This project included a title, picture, caption to the picture, a brief summary, and a link an external website with more information (This one links to wikipedia).  This project was again done before I leanred responsive web design, so the project may not work on smaller screens.</p>
+                        </div>
+                        <div class="project" id="project2div">
+                            <h1 id="title">Laika</h1>
+      <div id="img-div">
+        <img src="https://media.newyorker.com/photos/59fb65a52d0aaf4a81445779/16:9/w_3647,h_2051,c_limit/Wellerstein-Laika.jpg" id="image"/>
+        <div id="img-caption">
+        <p >A picture of Laika the dog in a mock cockpit, smiling</p>
+        </div>
+      </div>
+      <div id="info">
+      <p id="tribute-info">Laika was the first animal to orbit Earth by Russia in 1959.  She was a stray from Moscow that was taken to test how lifeforms would fair in low-oxygen enviornments.  She was sent into low-orbit aboard the Sputnik 2 on November 3rd, but died of hypnothermia soon after launch.  A statue was built in her name in 2008 and she has been honored in various other art-forms as well by people all over the world.</p>
+      <a id="tribute-link" href="https://en.wikipedia.org/wiki/Laika" target="_blank">Additional Information</a>
+      </div>
+
+                        </div>
+
+                    </div>
+                    <div class="tab-content projs" id="project3">
+                        <div class="description">
+                            <h1>Project 3: 12 Principles of Animation Documentation</h1>
+                            <p>For the 3rd project, I had to make some sort of technical documentation to work with CSS layouts.  I chose the 12 Principles of Animation, as it is a topic I was very familiar with.  I worked with responsive web design to make the webpage mobile friendly and learned about fixed and sticky positioning.</p>
+                        </div>
+                        <div class="project" id="project3div">
+                            <nav id="navbar">
+        <header>The 12 Principles of Animation</header>
+        <ul>
+        <li>
+        <a class="nav-link" href="#Squash_and_Stretch">Squash and Stretch</a></li>
+        <li>
+        <a class="nav-link" href="#Anticipation">Anticipation</a></li>
+        <li>
+        <a class="nav-link" href="#Staging">Staging</a></li>
+        <li>
+        <a class="nav-link" href="#Straight_Ahead_and_Pose_to_Pose">Straight Ahead and Pose to Pose</a></li>
+        <li>
+        <a class="nav-link" href="#Follow_Through_and_Overlapping_Action">Follow Through and Overlapping Action</a></li>
+        <li>
+        <a class="nav-link" href="#Slow_In_and_Slow_Out">Slow In and Slow Out</a></li>
+        <li>
+        <a class="nav-link" href="#Arc">Arc</a></li>
+        <li>
+        <a class="nav-link" href="#Secondary_Action">Secondary Action</a></li>
+        <li>
+        <a class="nav-link" href="#Timing">Timing</a></li>
+        <li>
+        <a class="nav-link" href="#Exaggeration">Exaggeration</a></li>
+        <li>
+        <a class="nav-link" href="#Solid_Drawing">Solid Drawing</a></li>
+        <li>
+        <a class="nav-link" href="#Appeal">Appeal</a></li>
+        </ul>
+      </nav>
+
+  <section id="main-doc">
+
+      <section id="Squash_and_Stretch" class="main-section">
+        <header>Squash and Stretch</header>
+        <p>Squash and Stretch is one of the first things taught in animation.  This principle involves a figure stretching in it's movement.  Think of a bouncing ball.  When it hits the ground, the impact makes the ball squash slightly.  When it goes back up, it reacts by stretching vertically.</p>
+      </section>
+      <section id="Anticipation" class="main-section">
+        <header>Anticipation</header>
+        <p>
+          Anticipation involves creating action before the main action.  For example, if you were to throw a ball, your arm would have to come back to prepare for the throw.  Having anticipation allows for the actions to seem more natural.
+        </p>
+      </section>
+      <section id="Staging" class="main-section">
+        <header>Staging</header>
+        <p>
+          Staging involves how the scene is set up.  Where is the character placed, or how does the viewer see the character?  Shadows and light can add to this as well.  Using something to lead the viewers eye to the animation allows for clarity.
+        </p>
+      </section>
+      <section id="Straight_Ahead_and_Pose_to_Pose" class="main-section">
+        <header>Straight Ahead and Pose to Pose</header>
+        <p>
+          Straight Ahead and Pose to Pose are two different styles of approaching actually animating a character.  Stright Ahead involves drawing one frame and then moving onto the next.  This method is good for effects or warping shapes. 
+        </p>
+        <p>
+          Pose to Pose involves drawing what are called keyframes first.  Keyframes are the large and important poses of the animation.  Once those are done, the frames between the keyframes (inbetweens) are done.  This method is better for keeping shape and size consistant.
+        </p>
+      </section>
+      <section id="Follow_Through_and_Overlapping_Action" class="main-section">
+        <header>Follow Through and Overlapping Action</header>
+        <p>
+          Follow Through and Overlapping Action are two key ideas that lead to the same effect.  This principle involves having parts of the character move AFTER the main movement is finished.  Think of a ponytail.  When someone with a ponytail runs and then stops moving, the ponytail continues to move slightly after that person stops.  This helps make characters more dynamic and improves overall flow.
+        </p>
+      </section>
+  <section id="Slow_In_and_Slow_Out" class="main-section">
+        <header>Slow In and Slow Out</header>
+        <p>
+          Slow In and Slow Out help movement feel less robotic.  When something starts to move, it takes effort to start, meaning that movement is slower.  A similar thing happens when something comes to a stop, it needs to slow down to release momentum before fully stopping.
+        </p>
+      </section>
+      <section id="Arc" class="main-section">
+        <header>Arc</header>
+        <p>
+          Arc involves how things move.  While some things move in a straight line, a lot move in curves or arcs.  When a person is walking, their leg doesn't move in a straight line.  It bends and moves in a curve relative to the persons body.  A similar thing happens with the arms.  Much of this is caused by objects being a fixed length.  If you move something forward that is attached to an unmoving point, it has to also move either up or down, or, in an arc.
+        </p>
+      </section>
+      <section id="Secondary_Action" class="main-section">
+        <header>Secondary Action</header>
+        <p>
+          Secondary Action is a principle similar to Follow Through and Overlapping Action.  This principle simpily involves having more than one thing moving at a time.  Say a person is waving.  The main action may be the person putting their arm up to wave.  A secondary action could be them smiling at the person they are waving at.  Secondary action like this makes things feel more alive and natural.
+        </p>
+      </section>
+      <section id="Timing" class="main-section">
+        <header>Timing</header>
+        <p>
+          Timing is increadibly important to animation.  When improperly timed, movements look stiff.  Having frames or poses spaced farther or closer from each other leads to visual interest.  In general, faster movements involve father poses, while slower movements have poses closer together.
+        </p>
+      </section>
+      <section id="Exaggeration" class="main-section">
+        <header>Exaggeration</header>
+        <p>
+          Exaggeration is what makes animation special.  Without the limits of reality, animators can push things beyond what is physically possible to show emotion.  Bigger, larger actions catch the eye of the audience and makes animations easier to read.
+        </p>
+      </section>
+      <section id="Solid_Drawing" class="main-section">
+        <header>Solid Drawing</header>
+        <p>
+          Solid Drawing is the least animation-related out of the principles.  In order to animate, a person must have an understanding of how to draw objects, especially in a 3D space.  Learning how to draw and studying anatomy and shape help improve this aspect of animation.
+        </p>
+      </section>
+      <section id="Appeal" class="main-section">
+        <header>Appeal</header>
+        <p>
+          Appeal is the most subjective animation principle.  Different people find different things appealing.  What one person likes isn't always the same as another.  Finding an audiance to appeal to and making the animation with that in mind makes animations worth watching.
+        </p>
+      </section>
+      </section>
+
+                        </div>
+                    </div>
+                    <div class="tab-content projs" id="project4">
+                        <div class="description">
+                            <h1>Project 4: Sticker Shop Website</h1>
+                            <p>The final project I completed through freeCodeCamp.org was a shop page.  For this, I used my own stickers that I had made and designed my shop page around that.  I needed an email list sign-up, about section, and a pricing section.  I used a lot of positioning styles and learned more about how to develop responsive web design and user-friendly pages.</p>
+                        </div>
+                        <div class="project" id="project4div">
+                            <header id="header">
+      <h1 id="pagename">Little Sticker Shop</h1>
+      <nav id="nav-bar" >
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#pricing" >Pricing</a>
+      </nav>
+    </header>
+    <section id="proj4-main">
+      
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <h4>Want to join our email list?</h4>
+        <input id="email" type="email" name="email" placeholder="Enter your email address"></input>
+        <input id="submit" type="submit" ></input>
+      </form>
+      <section id="about">
+        <p>At Little Sticker Shop, we are devoted to providing you quality, hand-crafted stickers.  All work is completly human-made with no "AI".  Our artists spend hours coming up with compeling themes and adorable stickers for you to add to your collection!</p>
+        <ul class="aboutlist">
+          <li class="l1" >Human-made - No AI</li>
+          <li class="l2" >Multiple Sizes!</li>
+          <li class="l1" >Easy-apply</li>
+          <li class="l2">Quality over Quantity</li>
+        </ul>
+      </section>
+      <section id="pricing">
+        <h1 class="pricehead">Prices</h1>     
+        <div id="singles">
+          <div id="gemanimals" class="pricebox">
+            <div class="pictures">
+              <img id="Gbunny" src="https://file.garden/aIrLo9W4twp1wUUK/20250729_101053.jpg" alt="Sticker of a purple, gem-themed bunny head."/>
+              <img id="Glion" src="https://file.garden/aIrLo9W4twp1wUUK/20250729_101050.jpg" alt="Sticker of a green, gem-themed lion head."/>
+              <img id="Gbird" src="https://file.garden/aIrLo9W4twp1wUUK/20250729_101059.jpg" alt="Sticker of a blue, gem-themed bird head."/>
+              <img id="Gfox" src="https://file.garden/aIrLo9W4twp1wUUK/20250729_101047.jpg" alt="Sticker of an orange-red, gem-themed fox head."/>
+              <img id="Gdeer" src="https://file.garden/aIrLo9W4twp1wUUK/20250729_101056.jpg" alt="Sticker of a yellow, gem-themed deer head."/>
             </div>
+            <h2>Gem Animal - $1</h2>
+            <ul class="pricelist">
+              <li>Geometric design</li>
+              <li>Avaliable in 2 sizes</li>
+              <li>5 animal variations</li>
+            </ul>
+          </div>
+          <div id="unicorns" class="pricebox">
+            <div class="pictures">
+              <img id="RainbowU" src="https://file.garden/aIrLo9W4twp1wUUK/20250729_100627.jpg" alt="Unicorn sticker with rainbow hair."/>
+              <img id="WhiteU"  src="https://file.garden/aIrLo9W4twp1wUUK/20250729_100555.jpg" alt="Unicorn sticker with white hair."/>
+              <img id="BlackU" src="https://file.garden/aIrLo9W4twp1wUUK/20250729_100559.jpg" alt="Unicorn sticker with black hair."/>
+            </div>
+            <h2>Unicorn - $1</h2>
+            <ul class="pricelist">
+              <li>Comes in 3 unique colors</li>
+              <li>Avaliable in 2 sizes</li>
+              <li>Perfect for fantasy settings</li>
+            </ul>
+          </div>
+          <div id="otheranimals" class="pricebox">
+            <div class="pictures">
+              <img id="dog" src="https://file.garden/aIrLo9W4twp1wUUK/20250729_100453.jpg" alt="Sticker of a cute, brown spotted dog."/>
+              <img id="squirrel" src="https://file.garden/aIrLo9W4twp1wUUK/20250729_100449.jpg" alt="Sticker of a brown/red squirrel curled up with their tail."/>
+            </div>
+            <h2>Small Critter - $1</h2>
+            <ul class="pricelist">
+              <li>2 options of adorable critters</li>
+              <li>Avaliable in 2 sizes</li>
+              <li>Great for decorating</li>
+            </ul>
+          </div>
+        </div>
+        <h1 class="pricehead">Bundles</h1>
+        <div id="bundles">
+          <div id="b-gems" class="pricebox">
+            <div class="bundpicture">
+              <img id="gempic" src="https://file.garden/aIrLo9W4twp1wUUK/20250729_101130.jpg" alt="5 stickers of the gem-themed animals, including a bird, bunny, lion, fox, and deer."/>
+            </div>
+            <h2>Gem Bundle - $3</h2>
+            <ul class="pricelist">
+              <li>Includes all 5 gem animals</li>
+              <li>2 sizes of each</li>
+            </ul>
+          </div>
+          <div id="b-unicorns" class="pricebox">
+            <div class="bundpicture">
+              <img id="unicornpic" src="https://file.garden/aIrLo9W4twp1wUUK/20250729_100651.jpg" alt="3 unicorn stickers, including one with rainbow hair, one with black hair, and one with white hair."/>
+            </div>
+            <h2>Unicorn Bundle - $2</h2>
+            <ul class="pricelist">
+              <li>Includes all 3 unicorn colors</li>
+              <li>2 sizes of each</li>
+            </ul>
+          </div>
+          <div id="b-all" class="pricebox">
+            <div class="bundpicture">
+              <img id="allpic" src="https://file.garden/aIrLo9W4twp1wUUK/20250729_101202.jpg" alt="Includes:5 stickers of the gem-themed animals, including a bird, bunny, lion, fox, and deer. 3 unicorn stickers, including one with rainbow hair, one with black hair, and one with white hair. A puppy sticker.  A squirrel sticker."/>
+            </div>
+            <h2>Collection Bundle - $5</h2>
+            <ul class="pricelist">
+              <li>Includes all 5 gem animals, 3 unicorn variations, and both critters</li>
+              <li>2 sizes of each</li>
+              <li>GREAT VALUE!</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </section>
+
+                        </div>
+                    </div>
+                    <div class="tab-content projs" id="project1">
+                        <div class="description">
+                            <h1>Project 1: Survey Form</h1>
+                            <p>This project involved creating a form of my choice.  I built one around music and came up with questions that allowed for a dropdown selection, a radio button, multiple choice selection, and a fill-in text box.  This was the first project and before I learned about @media and responsive web development, so it behaves poorly on small screens.</p>
+                        </div>
+                        <div class="project" id="project1div">
+                            <div id="titleandinfo">
+      <h1 id="title">Music Survey Form</h1>
+      <p id="description">Please fill out this form to tell us how you interact with music!</p>
+    </div>
+    <form id="survey-form">
+
+      <fieldset id="personal-info">
+      <label id="name-label" for="name">Name: <input class="outline"required id="name" type="text" placeholder="Firstname Lastname"/></label>
+      <label id="email-label" for="email">Email: <input class="outline" required id="email" type="email" placeholder="example@email.com"/></label>
+      <label id="number-label" for="number">Age: <input class="outline" id="number" type="number" min="13" max="150" placeholder="Age (in years)"></label>
+      </fieldset>
+
+      <fieldset id="music-listening-time">
+        <label for="dropdown">How often do you listen to music? 
+          <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Often</option>
+            <option value="2">Sometimes</option>
+            <option value="3">Rarely</option>
+            <option value="4">Never</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset id="yesnoconsert">Have you ever attended a concert?
+        <label>
+          <input checked class="box" type="radio" name="attends-yesno" value="yes" /> Yes
+        </label>
+        <label>
+          <input class="box" type="radio" name="attends-yesno" value="no" /> No
+        </label>
+      </fieldset>
+
+      <fieldset id="musictype">What type of music do you listen to?
+        <label>
+          <input class="box" type="checkbox" value="1"/> Pop
+        </label>
+        <label>
+          <input class="box" type="checkbox" value="2"/> Rock
+        </label>
+        <label>
+          <input class="box" type="checkbox" value="3"/> Classical
+        </label>
+        <label>
+          <input class="box" type="checkbox" value="4"/> Jazz
+        </label>
+        <label>
+          <input class="box" type="checkbox" value="5"/> Lo-Fi
+        </label>
+        <label>
+          <input class="box" type="checkbox" value="6"/> Metal
+        </label>
+        <label>
+          <input  class="box" type="checkbox" value="7"/> Folk
+        </label>
+        <label>
+          <input class="box" type="checkbox" value="8"/> Indie (Other)
+        </label>
+      </fieldset>
+
+      <fieldset id="freeresponse">
+        <label>What do you enjoy about music?
+          <textarea rows="3" placeholder="What I enjoy about music is..."></textarea>
+        </label>
+      </fieldset>
+
+      <button id="submit" >Submit</button>
+    </form>
+
+                    </div>
+                    </div>
+                </div>
+                <p>View all of my projects at <a id="projectlink" href="https://www.freecodecamp.org/certification/oliviavanhouten/responsive-web-design" target="_blank">freeCodeCamp.org</a></p>
+            </div>
+            
         </main>
         <footer>
 

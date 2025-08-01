@@ -1,3 +1,22 @@
+:root{
+    --theme-orange: orange;
+    --theme-black: rgb(11,11,19);
+    --theme-light: rgb(250,230,200);
+
+    /* Project 4 Themes */
+    
+  --dark-text: rgb(10,0,10);
+  --light-text: white;
+  --purple-theme: rgb(230,70,230);
+  --light-purple:rgb(250,160,250);
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
+
 .sr-only {
     color:transparent;
     background-color: transparent;
@@ -7,43 +26,516 @@
     position: absolute;
     top:-1px;
 }
+@media (max-width: 400px){
+    header {
+        font-size: 1.5rem;
+    }
+    h1{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 768px){
+  header {
+    font-size: 2rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  #project3div nav{
+    
+  display:in-line block;
+    position:relative;
+    height:20%;
+    width:100%;
+
+  }
+  #project3div #main-doc{
+    position:relative;
+    margin-left:0;
+    width:100%;
+  }
+  
+  #project3div header{
+    margin-bottom: -150px;
+  }
+  #project4div header{height: 70px;}
+   #project4div #pagename{
+    top: 25px;
+    font-size: .5rem;
+  }
+   #project4div a {font-size: .75rem;}
+   #project4div nav{
+    width: 30%;
+    flex-wrap: wrap;
+  }
+   #project4div form{padding: 10px;}
+   #project4div #pricing, #project4div #videoexample,  #project4div #about{padding-top:70px;}
+   #project4div #singles{grid: auto / 80%;}
+   #project4div #bundles{grid: auto / 85%;}
+}
+@media (min-width: 769px){
+    
+  header {
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  #project3div nav{
+    
+  display:block;
+    position:sticky;
+  top:0;
+  left:0;
+  width:20%;
+  height:100%;
+
+  }
+  #project3div #main-doc{
+    position:absolute;
+    top: 0;
+    margin-left:25%;
+    width:70%;
+  }
+  #project3div header{
+    margin-bottom: -180px;
+  }
+  #project4div header{height: 50px;}
+   #project4div #pagename{
+    top: 12px;
+    font-size: 1rem;
+  }
+   #project4div nav {width: 50%;}
+   #project4div #pricing,  #project4div #videoexample,  #project4div #about{padding-top:50px;}
+   #project4div #singles{grid: auto / 30% 30% 30%;}
+   #project4div #bundles{grid: auto / 45% 45%;}
+}
+
 html{
     
-    background-color: rgb(11,11,19);
+    background-color: var(--theme-black);
 }
 header{
     height:200px;
     padding:1%;
-    color: orange;
+    color: var(--theme-orange);
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    font-size: 1.5rem;
 }
 header h6{
     margin:0;
 }
 header hr{
-    border: 1px solid orange;
+    border: 1px solid var(--theme-orange);
 }
 
 main{
     padding: 1vw;
 }
 
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+a{
+    padding: 2px;
+    text-decoration: none;
+    color: var(--theme-orange);
+}
+nav a:hover{
+    color: var(--theme-black);
+    background-color: var(--theme-orange);
+    border-radius: 5px;
+}
+
 #main-div {
-    background-color: orange;
-    color:rgb(11,11,19);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: var(--theme-orange);
+    color: var(--theme-black);
     width: 98vw;
     height:auto;
     padding:1vw;
 }
-
-nav {
-    position:
+#about{
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+/*Learned tabs from this thread on StackOverflow:
+https://stackoverflow.com/questions/6906724/is-it-possible-to-have-tabs-without-javascript*/
+#tabs{
+    display: flex;
+    background-color: var(--theme-black);
+    width: 60%;
+    margin: auto;
+    border: 5px solid var(--theme-light);
+    border-radius: 20px;
 }
 
+
+.tab-folder > .tab-content:target ~ .tab-content:last-child, .tab-folder > .tab-content {
+    display: none;
+}
+.tab-folder > :last-child, .tab-folder > .tab-content:target {
+    display: flex;
+}
+
+#freeCodeCamp-Projects{
+    width: 100%;
+    height: 80vh;
+    background-color: var(--theme-light);
+    margin: 10px auto;
+    border-radius: 5px;
+    color: var(--theme-black);
+}
+.projs {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    place-content: center;
+    padding: 2%;
+}
+.description{
+    width: 40%;
+    padding-right: 3%;
+}
+.project {
+    width: 50%;
+    height: 90%;
+    overflow: scroll;
+}
+#projectlink{
+    color: var(--theme-black);
+    text-decoration: underline;
+}
+.center{
+    text-align: center;
+    padding: 10px;
+}
+
+/*Project 1 CSS*/
+#project1div{
+  background-image: url(https://th.bing.com/th/id/R.f909ac1717e0366d119e6e838cf6272a?rik=5wkZkOjPYLmcLA&riu=http%3a%2f%2fwww.publicdomainpictures.net%2fpictures%2f10000%2fvelka%2f87-1265714548Otmq.jpg&ehk=mH9rT4DBZ0Bs2Jp9kHLl%2fhaiaGsCzwqC%2bumtbuF38eI%3d&risl=&pid=ImgRaw&r=0);
+  color: rgb(30,30,0);
+  font-family: serif;
+}
+#project1div div{
+  margin: 1em 6em;
+  background-color: gold;
+}
+#project1div h1,#project1div p {
+  text-align: center;
+}
+#project1div p{
+  margin-top: -10px;
+  font-style: italic;
+}
+#project1div form{
+  width:80%;
+  max-width:500px;
+  min-width:200px;
+  text-align: center;
+  margin: auto;
+  background-color: rgba(30,30,0, .97);
+  color: rgb(230,230,150);
+  padding:0 5%;
+}
+#project1div fieldset:first-of-type{
+  padding-top: 20px;
+}
+#project1div fieldset{
+  border:none;
+  font-size: 1.4em;
+}
+#project1div label{
+  display: block;
+}
+#project1div input::placeholder{
+  color: rgb(100,100,0);
+}
+#project1div textarea::placeholder{
+  color: rgb(100,100,0);
+  font-family: serif;
+}
+#project1div.outline{
+  display: block;
+  width:100%;
+}
+#project1div input{
+  height: 2em;
+  font-size: 1rem;
+  border-radius:5px;
+}
+#project1div.box{
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+#project1div textarea{
+  width:100%;
+  border-radius:5px;
+}
+#project1div button{
+  width:40%;
+  min-width: 100px;
+  margin:20px;
+  padding:10px;
+  background-color:gold;
+  border-radius:10px;
+}
+
+/*Project 2 CSS*/
+#project2div{
+  background-image: url('https://cdn.pixabay.com/photo/2017/05/11/08/37/universe-2303321_960_720.jpg');
+}
+#project2div h1 {
+  text-align:center;
+  font-size:3rem;
+  color:white;
+}
+#project2div #image {
+  max-width:100%;
+  height:auto;
+  margin:auto;
+  display:block;
+  border-radius:10px;
+}
+#project2div #img-caption {
+  padding: 5px 20px;
+}
+#project2div p {
+  color:white;
+}
+#project2div a{
+  color:lightblue;
+}
+#project2div a:hover{
+  color:black;
+  background-color: lightblue;
+}
+#project2div #info{
+  background-color:black;
+  padding:20px;
+  margin:5%;
+  border-radius:20px;
+  text-align:center;
+}
+
+/* Project 3 CSS*/
+#project3div {
+    position: relative;
+    background-color: white;
+    color: black;
+}
+#project3div nav{
+  
+  border:2px solid black;
+  
+  overflow:auto;
+}
+#project3div header{
+  font-size:1rem;
+  padding:1%;
+  color: black;
+}
+#project3div nav header{
+  font-size:1rem;
+  padding:1%;
+  margin-bottom: -100px;
+  color: black;
+}
+#project3div ul{
+  position:relative;
+  width:100%;
+  margin:auto;
+  padding: 0;
+  list-style:none;
+  padding-left:0;
+  color: black;
+}
+#project3div li{
+  padding:1.3% 10px;
+  border-top:1px solid grey;
+}
+#project3div a {
+  padding:0px;
+  width:100%;
+}
+
+#project3div p{
+    font-size: .85rem;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  padding:0 2%;
+}
+
+/* Project 4 CSS */
+#project4div{
+    position: relative;
+    background-color: white;
+}
+ #project4div header {
+  position: sticky;
+  width: 100%;
+  overflow:hidden;
+  font-family: georgia, serif;
+  background: linear-gradient(90deg, var(--purple-theme) 10%, var(--light-purple) 35%, var(--purple-theme) 70%, rgb(190,70,210));
+  padding: 10px 2%;
+  margin: 0;
+  z-index: 1;
+}
+
+ #project4div #pagename{
+  width: 50%;
+  position: absolute;
+  margin: 0;
+  color: var(--dark-text);
+}
+ #project4div nav {
+  position: absolute;
+  top: 12px;
+  right: 5%;
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+}
+ #project4div a {
+    font-size: .5rem;
+  color: var(--light-text);
+  text-decoration: none;
+  padding: 3px;
+}
+ #project4div a:hover {
+  background-color: var(--light-text);
+  border-radius: 1%;
+  color: var(--dark-text);
+}
+
+ #project4div main{
+  position:relative;
+  display:box;
+  width:100%;
+  top:50px; 
+  padding: 5% 1%;
+}
+
+ #project4div form{
+  position: relative;
+  left: 25%;
+  width: 50%;
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+ #project4div form h4 {
+  font-size: 1.2rem;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  color: var(--dark-text);
+}
+ #project4div #submit {
+  font-family: georgia, serif;
+  background-color: var(--purple-theme);
+  color: var(--light-text);
+}
+ #project4div #submit:hover {
+  background-color: var(--light-text);
+  color: var(--dark-text);
+}
+
+ #project4div #about{
+  margin: 10px auto;
+  padding: auto 4px;
+  padding-bottom: 10px;
+  width: 90%;
+  color: var(--dark-text);
+  text-align: justify;
+  border-top: 1px solid var(--purple-theme);
+  border-bottom: 1px solid var(--purple-theme);
+}
+ #project4div .aboutlist{
+  width: 80%;
+  margin: auto;
+  font-size: 1.5rem;
+}
+ #project4div li {
+  padding: 4px;
+}
+ #project4div .l2{
+  background-color: var(--light-purple);
+}
+ #project4div #pricing {
+  text-align: center;
+}
+
+ #project4div .pricehead {
+  font-size: 3rem;
+}
+ #project4div #singles {
+  display:grid;
+  width: 100%;
+  place-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+ #project4div #bundles {
+  display:grid;
+  width: 100%;
+  place-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+ #project4div .pricebox {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--dark-text);
+  height: 300px;
+  padding: 5px;
+  margin: 0;
+  overflow: auto;
+}
+
+ #project4div .pictures{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  height: 50%;
+  overflow: auto;
+  align-content: center;
+  gap: 10px;
+}
+ #project4div .pictures img{
+  height:100%;
+  width:auto;
+}
+ #project4div #pricing h2{
+  color: var(--purple-theme);
+}
+ #project4div .pricelist{
+  width: 80%;
+  margin: auto;
+}
+ #project4div .bundpicture{
+  height: 50%;
+  width: auto;
+}
+ #project4div .bundpicture img{
+  height: 100%;
+  width:auto;
+}
+
+
+
 .typing {
-    border-right: 2px solid orange;
+    border-right: 2px solid var(--theme-orange);
     overflow:hidden;
     white-space: nowrap;
     
@@ -56,7 +548,7 @@ nav {
         border-color: transparent;
     }
     50% {
-        border-color: orange;
+        border-color: var(--theme-orange);
     }
     100% {
         border-color: transparent;
